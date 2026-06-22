@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>victim.team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0F0F0F;
+            color: #FFCD00;
+            font-family: 'Anonymous Pro', monospace; /* Установлен Anonymous Pro */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: 480px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 2.5rem;
+            display: block;
+        }
+
+        .text-block {
+            font-size: clamp(14px, 1.1vw + 10px, 17px);
+            line-height: 1.45;
+            letter-spacing: -0.01em;
+            text-align: justify;
+            text-justify: inter-word;
+            width: 100%;
+        }
+
+        .projects-list {
+            margin-top: 1.2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .project-item {
+            display: block;
+            text-align: center;
+        }
+
+        a {
+            color: #8D25E1;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 1px;
+            transition: opacity 0.2s ease, text-decoration-color 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration-color: transparent;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="victim.svg" alt="victim" class="logo">
+
+        <div class="text-block">
+            <p>Наша команда образовалась в принятии своей идентичности и отсутствии рамок, за время совместного творчества были созданы:</p>
+            
+            <div class="projects-list">
+                <span class="project-item"><a href="https://www.imdb.com/title/tt34705762/" target="_blank" rel="noopener">«Ветер в голове»</a></span>
+                <span class="project-item">«Мотив»</span>
+                <span class="project-item">«Сцена с собакой»</span>
+                <span class="project-item">«Однажды в Йобурге»</span>
+                <span class="project-item">«Бей. Люби. Умри»</span>
+                <span class="project-item">и находится в процессе создания «Побег из сказки»</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
